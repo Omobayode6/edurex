@@ -7,7 +7,7 @@ This site uses React + Typescript + Vite for building and pnpm for package manag
 ## Clone & Install the Application
 * Clone the repository
 ```javascript
-git clone https://github.com/Prioclen-Technologies/godwin.git
+git clone https://github.com/Omobayode6/edurex.git
 ```
 * Change directory into the the project folder
 ```javascript
