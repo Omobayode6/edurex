@@ -1,6 +1,19 @@
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import splashImg from '../../assets/images/splah1.png'
 
 const FirstSplash = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      navigate('/second');
+    }, 3 * 1000); // Convert seconds to milliseconds
+
+    // Cleanup the timeout if the component unmounts before the timeout completes
+    return () => clearTimeout(timeoutId);
+  }, [navigate]);
+
   return (
     <div className=' flex flex-col justify-center items-center py-14'>
       <img src={splashImg} alt="family reading" />
@@ -12,7 +25,7 @@ const FirstSplash = () => {
         <span className="text-zinc-500 text-base font-medium leading-relaxed"> mobile phone calls within </span>
         <span className="text-cyan-900 text-xl font-bold leading-loose">Your Group</span>
       </p>
-      <div className="text-right text-cyan-900 text-sm font-bold">SKIP</div>
+      <div className="text-right text-cyan-900 text-sm font-bold"><Link to='/second'>SKIP</Link></div>
       </div>
     </div>
   )

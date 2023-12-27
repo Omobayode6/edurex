@@ -24,7 +24,7 @@ const TextField = ({
       {
         "w-[280px] md:w-[390px]":
         variant== "long",
-        "w-[282px]":
+        "w-[358.97px]":
         variant== "medium",
         "w-[111px] md:w-[172px]":
         variant== "short",
@@ -39,7 +39,7 @@ const TextField = ({
         // field: { onChange, onBlur, value, name, ref },
         {...field}
         {...props}
-        className='block w-[358.97px] h-[51.50px] p-[17.75px] rounded-lg border border-zinc-400 text-stone-300 text-[12.82px] font-medium leading-none appearance-none focus:bg-white focus:outline focus:outline--zinc-400 bg-white disabled:opacity-75 disabled:hover:cursor-not-allowed'
+        className='block w-full h-[51.50px] p-[17.75px] rounded-lg border border-zinc-400 text-stone-300 text-[12.82px] font-medium leading-none appearance-none focus:bg-white focus:outline focus:outline--zinc-400 bg-white disabled:opacity-75 disabled:hover:cursor-not-allowed'
         />
 
       <p
