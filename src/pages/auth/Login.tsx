@@ -40,8 +40,8 @@ const Login = () => {
           control={control}
         />
         <div className="flex justify-between items-center mt-4">
-        <p className="text-left text-neutral-700 text-sm font-semibold"><Link to='/forgot-password'>Forgot Password?</Link></p>
-        <p className="text-right text-neutral-700 text-sm font-semibold"><Link to='/register'>Don’t an Account?</Link></p>
+        <p className="text-left text-neutral-700 text-sm font-semibold"><Link to='/edurex/forgot-password'>Forgot Password?</Link></p>
+        <p className="text-right text-neutral-700 text-sm font-semibold"><Link to='/edurex/register'>Don’t an Account?</Link></p>
         </div>
         <button className="w-full h-[57px] px-[147px] py-[19px] bg-cyan-900 rounded-[10px] justify-center items-center gap-2.5 text-white text-base font-bold mt-4">
           Login

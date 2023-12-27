@@ -7,7 +7,7 @@ const SecondSplash = () => {
   const navigate = useNavigate();
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      navigate('/third');
+      navigate('/edurex/third');
     }, 3 * 1000); // Convert seconds to milliseconds
 
     // Cleanup the timeout if the component unmounts before the timeout completes
@@ -25,7 +25,7 @@ const SecondSplash = () => {
         <span className="text-cyan-900 text-xl font-bold leading-loose">Partners</span>
         <span className="text-zinc-500 text-base font-medium leading-relaxed"> on the platform</span>
       </p>
-      <div className="text-right text-cyan-900 text-sm font-bold"><Link to='/third'>SKIP</Link></div>
+      <div className="text-right text-cyan-900 text-sm font-bold"><Link to='/edurex/third'>SKIP</Link></div>
       </div>
     </div>
   )

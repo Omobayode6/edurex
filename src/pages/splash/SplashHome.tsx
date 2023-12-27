@@ -7,7 +7,7 @@ const SplashHome = () => {
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      navigate('/first');
+      navigate('/edurex/first');
     }, 3 * 1000); // Convert seconds to milliseconds
 
     // Cleanup the timeout if the component unmounts before the timeout completes

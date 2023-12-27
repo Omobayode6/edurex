@@ -1,5 +1,5 @@
 # CUG App
-This Repo is used to manage code related to Barr. [CUG App](https://google.com). 
+This Repo is used to manage code related to Barr. [CUG App](https://omobayode6.github.io/edurex/). 
 
 ## Developement
 This site uses React + Typescript + Vite for building and pnpm for package management. it uses Tailwind CSS for styling.

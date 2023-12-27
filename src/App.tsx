@@ -9,6 +9,7 @@ import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import ForgotPassword from "./pages/auth/ForgotPassword";
 import Home from "./pages/dashboard/Home";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -16,17 +17,18 @@ function App() {
       <ScrollToTop />
       <Routes>
         {/* Plash Screen */}
-        <Route path="/" element={<SplashHome/>} />
-        <Route path="/first" element={<FirstSplash/>} />
-        <Route path="/second" element={<SecondSplash/>} />
-        <Route path="/third" element={<ThirdSplah/>} />
+        <Route path="/edurex/" element={<SplashHome/>} />
+        <Route path="/edurex/first" element={<FirstSplash/>} />
+        <Route path="/edurex/second" element={<SecondSplash/>} />
+        <Route path="/edurex/third" element={<ThirdSplah/>} />
         {/* Auth Screen */}
-        <Route path="/auth" element={<AuthScreen/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Register/>} />
-        <Route path="/forgot-password" element={<ForgotPassword/>} />
+        <Route path="/edurex/auth" element={<AuthScreen/>} />
+        <Route path="/edurex/login" element={<Login/>} />
+        <Route path="/edurex/register" element={<Register/>} />
+        <Route path="/edurex/forgot-password" element={<ForgotPassword/>} />
         {/* Dashboard Screen */}
-        <Route path="/dashboard" element={<Home/>} />
+        <Route path="/edurex/dashboard" element={<Home/>} />
+        <Route path="/edurex/*" element={<PageNotFound/>} />
       </Routes>
     </BrowserRouter>
   )

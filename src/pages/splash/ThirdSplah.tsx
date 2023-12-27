@@ -7,7 +7,7 @@ const ThirdSplah = () => {
   const navigate = useNavigate();
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      navigate('/auth');
+      navigate('/edurex/auth');
     }, 3 * 1000); // Convert seconds to milliseconds
 
     // Cleanup the timeout if the component unmounts before the timeout completes
@@ -27,7 +27,7 @@ const ThirdSplah = () => {
           <span className="text-zinc-500 text-base font-medium leading-relaxed"> persons to your </span>
           <span className="text-cyan-900 text-xl font-bold leading-loose">Group</span>
         </p>
-        <div className="text-right text-cyan-900 text-sm font-bold"><Link to='/auth'>SKIP</Link></div>
+        <div className="text-right text-cyan-900 text-sm font-bold"><Link to='/edurex/auth'>SKIP</Link></div>
       </div>
     </div>
   )
